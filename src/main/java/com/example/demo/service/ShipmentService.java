@@ -12,7 +12,6 @@ public class ShipmentService {
     private ShipmentEntity shipmentEntity = new ShipmentEntity("Order1","Ship1", "Prod1", new Date(2021-02-19), 2.0);
 
     public Callable<ShipmentEntity> getShipment(final String orderId){
-        System.out.println("hola mundo");
         return () -> shipmentEntity;
     }
 }
